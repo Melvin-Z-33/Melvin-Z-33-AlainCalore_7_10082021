@@ -12,15 +12,119 @@
 			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
 			crossorigin="anonymous"
 		/>
+		<!--Font awesome for icons -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="style.css" />
-		<title>Document</title>
+		<title>les petits plats</title>
 	</head>
-	<body>
-		<header></header>
-		<main></main>
 
+
+	<body>
+
+		<!-- header -->
+		<header class="mt-2">
+			<h1 class="display-1 text-center mt-3 text-danger">Les petits plats</h1>
+			<div class="input-group mt-5 px-3 d-flex align-items-center " id="header-search">
+				<input class="form-control form-control-lg bg-light" type="text" id="research" placeholder="rechercher un ingrédient,appareil, ustensiles ou une recette"></input>
+				<i class="fas fa-search"></i>
+			</div>
+		</header>
+
+		<!-- main -->
+		<main class="mt-4 pt-3">
+			<div class="main-header  d-flex flex-wrap ps-2">
+				<div class="dropdown mx-1 ">
+					<button class="btn btn-secondary dropdown-toggle bg-primary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+					Ingredient
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+					<li><a class="dropdown-item m-1" href="#">Action</a></li>
+					<li><a class="dropdown-item m-1" href="#">Another action</a></li>
+					<li><a class="dropdown-item m-1" href="#">Something else here</a></li>
+					</ul>
+				</div>
+				<div class="dropdown mx-1">
+					<button class="btn btn-secondary dropdown-toggle dropdown-toggle bg-success" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+					Appareil
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+					<li><a class="dropdown-item" href="#">Action</a></li>
+					<li><a class="dropdown-item" href="#">Another action</a></li>
+					<li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				</div>
+				<div class="dropdown mx-1">
+					<button class="btn btn-secondary dropdown-toggle bg-danger" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+					Ustensiles
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+					<li><a class="dropdown-item" href="#">Action</a></li>
+					<li><a class="dropdown-item" href="#">Another action</a></li>
+					<li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<section id="cards d-flex container">
+				<div class="row justify-content-between mt-5 ">
+						<div class="card col col-md-3 mx-4 ">
+							<img class="" src="http://via.placeholder.com/10">
+
+							<div class="card-body container">
+									<div class="row justify-content-between">
+										<h4 class="card-title col-8">Limonade de coco</h4>
+										<p class="card-timer col-4 text-end"><i class="far fa-clock"></i> 10 min</p>
+									<div class="card-ingredient col-6">
+										<p><strong>Lait de coco</strong>400ml</p>
+										<p><strong>Jus de citron</strong>:2</p>
+									</div>
+									<div class="card-text col-6 text-start text-wrap">
+										<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, sed.</p>
+									</div>
+									</div>
+							</div>
+						</div>
+						<div class="card col col-md-3 mx-4 ">
+							<img class="" src="http://via.placeholder.com/10">
+
+							<div class="card-body container">
+									<div class="row justify-content-between">
+										<h4 class="card-title col-8">Limonade de coco</h4>
+										<p class="card-timer col-4 text-end"><i class="far fa-clock"></i> 10 min</p>
+									<div class="card-ingredient col-6">
+										<p><strong>Lait de coco</strong>400ml</p>
+										<p><strong>Jus de citron</strong>:2</p>
+									</div>
+									<div class="card-text col-6 text-start text-wrap">
+										<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, sed.</p>
+									</div>
+									</div>
+							</div>
+						</div>
+						<div class="card col col-md-3 mx-4 ">
+							<img class="" src="http://via.placeholder.com/10">
+
+							<div class="card-body container">
+									<div class="row justify-content-between">
+										<h4 class="card-title col-8">Limonade de coco</h4>
+										<p class="card-timer col-4 text-end"><i class="far fa-clock"></i> 10 min</p>
+									<div class="card-ingredient col-6">
+										<p><strong>Lait de coco</strong>400ml</p>
+										<p><strong>Jus de citron</strong>:2</p>
+									</div>
+									<div class="card-text col-6 text-start text-wrap">
+										<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, sed.</p>
+									</div>
+									</div>
+							</div>
+						</div>
+				</div>
+			</section>
+
+
+		</main>
 		<!-- JavaScript Bundle with Popper - Bootstrap -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"

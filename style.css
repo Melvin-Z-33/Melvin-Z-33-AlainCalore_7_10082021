@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    /* max-width: 1440px; */
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#header-search {
+    position: relative;
+}
+
+#header-search i {
+    position: absolute;
+    right: 25px;
+}
+
+/* Main */
+
+
+.card {
+    width: 30%;
+    padding: 0
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-ingredient p {
+    margin-bottom: -5px;
+}
