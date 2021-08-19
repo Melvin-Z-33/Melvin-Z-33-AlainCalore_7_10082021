@@ -9,6 +9,7 @@ body {
     /* max-width: 1440px; */
     height: 100vh;
     overflow-x: hidden;
+    margin: 0 1rem;
 }
 
 #header-search {
@@ -34,4 +35,15 @@ body {
 
 .card-ingredient p {
     margin-bottom: -5px;
+}
+
+#results-card {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+}
+
+.ddsearch {
+    width: 80px
 }
