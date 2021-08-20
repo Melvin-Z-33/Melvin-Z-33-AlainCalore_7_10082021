@@ -1,3 +1,4 @@
+/** GENERAL **/
 * {
     margin: 0px;
     padding: 0px;
@@ -10,40 +11,211 @@ body {
     height: 100vh;
     overflow-x: hidden;
     margin: 0 1rem;
+    max-width: 1444px;
 }
 
-#header-search {
+h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.lato-bold {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.lato-regular {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.text-hidden {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+/********** HEADER SECTION  ************/
+
+#search {
+
     position: relative;
+    height: 69px;
+    border-radius: 5px;
 }
 
-#header-search i {
+#search i {
     position: absolute;
-    right: 25px;
+    right: 40px;
+    font-size: 32.06px;
 }
 
-/* Main */
+#search input {
+    background: #E7E7E7;
+    height: 69px;
 
+}
+
+::placeholder {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    height: 22px;
+    width: 474px;
+    left: 22px;
+    top: 23px;
+
+
+
+
+}
+
+/********** MAIN SECTION **********/
+
+#combo-ingredient {
+    color: white;
+}
+
+#combo-ingredient::placeholder {
+    color: white;
+}
+
+
+
+
+
+/** CARD  **/
+#result-cards {
+    width: 104%
+}
 
 .card {
-    width: 30%;
-    padding: 0
+    width: 380px;
+    height: 364px;
+    border-radius: 5px;
+    padding: 0;
+    margin-bottom: 30px;
 }
 
 .card img {
     object-fit: cover;
+    width: 380px;
+    height: 178px;
+    background: #C7BEBE;
+}
+
+.card-body {
+    width: 380px;
+    height: 186px;
+    text-overflow: ellipsis;
+}
+
+.card-title {
+    height: 26px;
+    width: 239px;
+    left: 20px;
+    top: 198px;
+}
+
+.card-timer {
+    position: absolute;
+    height: 24px;
+    width: 101px;
+    left: 275px;
+    top: 198px;
+    border-radius: 0px;
+}
+
+
+.card-ingredient {
+    height: 105px;
+    width: 190px;
+    left: 20px;
+    top: 240px;
+}
+
+.card-ingredient .lato-bold {
+    font-size: 12px;
+    line-height: 14.4px;
 }
 
 .card-ingredient p {
     margin-bottom: -5px;
+    font-size: 12px;
+    line-height: 14.4px;
+    width: 171px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
-#results-card {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    width: 100%;
+
+.card-text {
+    height: 109px;
+    width: 171px;
+    left: 191px;
+    top: 240px;
 }
+
+.description {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    margin: 0 auto;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 .ddsearch {
     width: 80px
+}
+
+
+/********** MEDIA QUERIES SECTION **********/
+/* #results-cards */
+@media screen and (max-width: 1219px) {
+    #results-cards {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 585px) {
+
+    .card,
+    .card img,
+    .card body {
+        width: 360px;
+    }
+
+    .card-timer {
+        left: 262px;
+    }
+
+    .description {
+        position: absolute;
+    }
+
 }
